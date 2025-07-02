@@ -23,7 +23,7 @@ namespace PartyAndClanLimitExtenderShokuho
 
                 _harmonyApplied = true; // Garante que nunca mais aplicas os patches
 
-                InformationManager.DisplayMessage(new InformationMessage("[Mod] Patches aplicados com sucesso!"));
+                //InformationManager.DisplayMessage(new InformationMessage("[Mod] Patches aplicados com sucesso!"));
             }
         }
     }

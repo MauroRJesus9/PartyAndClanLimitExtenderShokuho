@@ -1,9 +1,9 @@
 <Tasks>
 	<CreateItem/>
 	<UpdateItem>
-		<ModuleFolder Value="E:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\PartyAndCompanionLimitMod"/>
+		<ModuleFolder Value="E:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\PartyAndClanLimitExtenderShokuho"/>
 		<!-- A direct path of your module -->
-		<ItemDescription Value="A mod that sets the companion limit to 1000. I created it for personal use, it works with Shokuho, since it is for personal use it will be maintaned for as long as I play bannerlord and it was only tested in Shokuho since it is the mod I play so use at your own risk."/>
+		<ItemDescription Value="Placeholder"/>
 		<!-- A description that will be displayed on Steam Workshop, can be edited via the Steam UI -->
 		<Tags> 
 			<!-- You can use the following tags: -->
@@ -14,6 +14,7 @@
 			<Tag Value="Utility" />
 			<Tag Value="Native" />
 			<Tag Value="Singleplayer" />
+			<Tag Value="Shokuho " />
 			<Tag Value="v1.2.12" />
 		</Tags>
 		<Image Value="C:\Users\mauro\Downloads\Capture.PNG"/>
