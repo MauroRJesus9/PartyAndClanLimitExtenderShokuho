@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModuleInfo>
+  <Id value="PartyAndClanLimitExtenderShokuho"/>
+  <Version value="v1.1.1"/>
+  <DependedModuleIds>
+    <DependedModule Id="Native"/>
+    <DependedModule Id="SandBoxCore"/>
+    <DependedModule Id="Sandbox"/>
+    <DependedModule Id="StoryMode"/>
+    <DependedModule Id="Bannerlord.Harmony"/>
+    <DependedModule Id="Shokuho"/>
+  </DependedModuleIds>
+  <Incompatibilities/>
+  <SubModules/>
+</ModuleInfo>

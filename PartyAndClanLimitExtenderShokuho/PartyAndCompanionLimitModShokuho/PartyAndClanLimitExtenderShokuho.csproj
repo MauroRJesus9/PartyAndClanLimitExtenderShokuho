@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>Libraries\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="MCM.Abstractions">
+      <HintPath>Libraries\MCM.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="MCM.Implementation">
+      <HintPath>Libraries\MCM.Implementation.dll</HintPath>
+    </Reference>
+    <Reference Include="MCMv5">
+      <HintPath>Libraries\MCMv5.dll</HintPath>
+    </Reference>
+    <Reference Include="Shokuho">
+      <HintPath>..\..\..\..\Documents\GitHub\Bannerlord-Party-Companion-Increase-Mod - Shokuho\PartyAndCompanionLimitMod\PartyAndCompanionLimitMod\bin\Debug\Shokuho.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.CampaignSystem">
+      <HintPath>E:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\bin\Win64_Shipping_Client\TaleWorlds.CampaignSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.CampaignSystem.ViewModelCollection">
+      <HintPath>Libraries\TaleWorlds.CampaignSystem.ViewModelCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.Core">
+      <HintPath>E:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\bin\Win64_Shipping_Client\TaleWorlds.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.Core.ViewModelCollection">
+      <HintPath>Libraries\TaleWorlds.Core.ViewModelCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.Library">
+      <HintPath>E:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\bin\Win64_Shipping_Client\TaleWorlds.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.Localization">
+      <HintPath>..\..\..\..\Documents\GitHub\Bannerlord-Party-Companion-Increase-Mod - Shokuho\PartyAndCompanionLimitMod\PartyAndCompanionLimitMod\bin\Debug\TaleWorlds.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.MountAndBlade">
+      <HintPath>E:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\bin\Win64_Shipping_Client\TaleWorlds.MountAndBlade.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.ObjectSystem">
+      <HintPath>Libraries\TaleWorlds.ObjectSystem.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
