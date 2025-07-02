@@ -1,7 +1,8 @@
 ﻿using HarmonyLib;
+using MCM.Abstractions.Base.Global;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
-using MCM.Abstractions.Base.Global;
+using TaleWorlds.Core;
 
 namespace PartyAndClanLimitExtenderShokuho
 {
@@ -9,7 +10,6 @@ namespace PartyAndClanLimitExtenderShokuho
     {
         public static void ApplyPatches(Harmony harmony)
         {
-            // Patch ao GetPartyLimitForTier
             var clanTierType = AccessTools.TypeByName("Shokuho.ShokuhoCustomCampaign.Models.ShokuhoClanTierModel");
             if (clanTierType != null)
             {
@@ -18,7 +18,6 @@ namespace PartyAndClanLimitExtenderShokuho
                 harmony.Patch(method, postfix: new HarmonyMethod(postfix));
             }
 
-            // Patch ao GetMaxWorkshopCountForClanTier
             var workshopType = AccessTools.TypeByName("TaleWorlds.CampaignSystem.GameComponents.ShokuhoWorkshopModel");
             if (workshopType != null)
             {
@@ -27,7 +26,6 @@ namespace PartyAndClanLimitExtenderShokuho
                 harmony.Patch(method, postfix: new HarmonyMethod(postfix));
             }
 
-            // Patch ao GetPartyPrisonerSizeLimit
             var partySizeLimitType = AccessTools.TypeByName("Shokuho.CustomCampaign.CustomLocations.models.ShokuhoPartySizeLimitModel");
             if (partySizeLimitType != null)
             {
@@ -44,15 +42,7 @@ namespace PartyAndClanLimitExtenderShokuho
         {
             if (clan == Clan.PlayerClan)
             {
-                int baseLimit;
-                if (clanTierToCheck < 3)
-                    baseLimit = 1;
-                else if (clanTierToCheck < 5)
-                    baseLimit = 2;
-                else
-                    baseLimit = 3;
-
-                __result = baseLimit + GlobalSettings<ModSettings>.Instance.ClanPartiesBonus;
+                __result += GlobalSettings<ModSettings>.Instance.ClanPartiesBonus;
             }
         }
     }
@@ -108,9 +98,12 @@ namespace PartyAndClanLimitExtenderShokuho
     [HarmonyPatch(typeof(Clan), "get_CompanionLimit")]
     public static class ClanCompanionLimitPatch
     {
-        public static void Postfix(ref int __result)
+        public static void Postfix(Clan __instance, ref int __result)
         {
-            __result += GlobalSettings<ModSettings>.Instance.CompanionBonus;
+            if (__instance == Clan.PlayerClan)
+            {
+                __result += GlobalSettings<ModSettings>.Instance.CompanionBonus;
+            }
         }
     }
 }

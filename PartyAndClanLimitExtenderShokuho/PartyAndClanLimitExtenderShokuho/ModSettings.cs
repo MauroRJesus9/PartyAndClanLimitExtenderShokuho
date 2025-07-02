@@ -2,6 +2,7 @@
 using MCM.Abstractions.Attributes.v2;
 using MCM.Abstractions.Base.Global;
 using System.ComponentModel;
+using PartyAndClanLimitExtenderShokuho;
 
 namespace PartyAndClanLimitExtenderShokuho
 {
@@ -118,8 +119,3 @@ namespace PartyAndClanLimitExtenderShokuho
 
     }
 }
-
-
-
-
-
