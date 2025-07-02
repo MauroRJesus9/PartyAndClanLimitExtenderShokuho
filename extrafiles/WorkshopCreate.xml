@@ -17,7 +17,7 @@
 			<Tag Value="Shokuho " />
 			<Tag Value="v1.2.12" />
 		</Tags>
-		<Image Value="C:\Users\mauro\Downloads\Capture.PNG"/>
+		<Image Value="C:\Users\mauro\Documents\GitHub\PartyAndClanLimitExtenderShokuho\extrafiles\logo.png"/>
 		<!-- Determines the featured image displayed on Steam Workshop, a direct path to it must be inserted here (the image should be smaller than 1 MB) -->
 		<Visibility Value="Public"/>
 		<!-- Determines visibility on Steam Workshop. Can be: Public, FriendsOnly, Private -->

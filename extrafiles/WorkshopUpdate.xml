@@ -1,12 +1,12 @@
 <Tasks>
 	<GetItem>
-		<ItemId Value="3508555611"/>
+		<ItemId Value="3514722516"/>
 		<!-- Can be found in the URL of your workshop item -->
 	</GetItem>
 	<UpdateItem>
-		<ModuleFolder Value="E:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\PartyAndCompanionLimitMod"/>
+		<ModuleFolder Value="E:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\PartyAndClanLimitExtenderShokuho"/>
 		<!-- A direct path of your module -->	
-		<ChangeNotes Value="1.1.0" />
+		<ChangeNotes Value="1.1.1" />
 		Placeholder
 		<Tags> 
 			<!-- You can use the following tags: -->
@@ -19,5 +19,6 @@
 			<Tag Value="Singleplayer" />
 			<Tag Value="v1.2.12" />
 		</Tags>
+		<!-- <Image Value="C:\Users\mauro\Documents\GitHub\PartyAndClanLimitExtenderShokuho\extrafiles\logo.png"/> -->
 	</UpdateItem>
 </Tasks>

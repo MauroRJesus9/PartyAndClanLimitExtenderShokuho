@@ -1,1 +1,0 @@
-TaleWorlds.MountAndBlade.SteamWorkshop.exe C:\Users\mauro\Documents\GitHub\PartyAndClanLimitExtenderShokuho\xmlfiles\WorkshopCreate.xml
